@@ -1,7 +1,45 @@
+                                            /* header/ */
 .menu__body{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    background-color: #EEEAEA;
+    font-family: serif;
+}
+.menu__list{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+.menu__item{
+    margin-right: 15px;
+}
+.menu__link{
+    color: #000;
+    display: inline-block;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+}
+.menu__link:after {
+    background-color: #00BFFF; /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px; /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.menu__link:hover:after{
+    width: 100%;
 }
 
+.logo{
+    margin-left: 40px;
+}
+
+                                            /* about_company */
 .title{
     font-weight: 600;
     font-size: 24px;
@@ -10,6 +48,7 @@
 .about_company{
     font-family: "Montserrat", sans-serif;
     width: 100%;
+    margin-top: 30px;
 }
 .about_company_container{
     background-color: #00BFFF;
