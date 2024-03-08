@@ -156,3 +156,18 @@
 .button:hover:before {
     width: 100%;
     }
+
+                                  /* use_device */
+.use_device{
+    font-family: "Montserrat", sans-serif;
+    margin-top: 40px;
+}
+.use_device__items{
+    margin-left: 40px;
+    margin-top: 40px;
+    list-style: square;
+}
+.use_device__item{
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
