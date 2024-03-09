@@ -50,7 +50,7 @@ function displayDevices(devices) {
 });
 }
 
-// Загрузите товары и отобразите их
+// Загрузка девайсов и их отображение
 fetchDevices().then((devices) => {
     displayDevices(devices);
 });
