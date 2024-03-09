@@ -144,7 +144,7 @@
 .about_company{
     font-family: "Montserrat", sans-serif;
     width: 100%;
-    padding-top: 30px;
+    padding-top: 40px;
     background-color: #00bfff0f;
 }
 .about_company_container{
@@ -171,7 +171,8 @@
                                             /* devices/ */
 .devices{
     font-family: "Montserrat", sans-serif;
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .devices__items{
     display: flex;
@@ -219,15 +220,21 @@
                                   /* use_device */
 .use_device{
     font-family: "Montserrat", sans-serif;
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #00bfff0f;
 }
 .use_device__items{
     margin-top: 40px;
-    list-style: square;
 }
 .use_device__item{
     margin-bottom: 20px;
     margin-left: 15px;
+}
+.list-icon{
+    position: relative;
+    top: 5px;
+    width: 20px;
 }
 
 /* download */
