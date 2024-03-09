@@ -7,9 +7,57 @@
     font-weight: 600;
     font-size: 24px;
 }
+.button{
+    margin-top: 20px;
+    background-color: #00BFFF;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00BFFF; 
+    border-radius: 10rem;
+    z-index: -2;
+}
+.button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #16AFE3; /* Поменяйте на фактический цвет и тон, если $color не определен */
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button:hover:before {
+    width: 100%;
+    }
 .header_title{
     text-align: center;
-    font-size: 24px;
+    font-size: 34px;
     color: #fff;
     font-weight: 600;
 
@@ -68,8 +116,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent, transparent, rgba(0, 0, 0, 0.7));
-     
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    z-index: -1;
 }
 
 .header_descr {
@@ -82,9 +130,10 @@
 .header_text{
     color: #fff;
     text-align: center;
-    max-width: 700px;
+    max-width: 900px;
     padding-top: 30px;
-    font-size: 24px;
+    padding-bottom: 20px;
+    font-size: 20px;
 }
 
 
@@ -147,54 +196,7 @@
             text-overflow: ellipsis; 
             white-space: nowrap;
 }
-.button{
-    margin-top: 20px;
-    background-color: #00BFFF;
-    border-radius: 30px;
-    color: #fff;
-    display: inline-block;
-    padding: .75rem 1.25rem;
-    border-radius: 10rem;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    letter-spacing: .15rem;
-    transition: all .3s;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-.button:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00BFFF; 
-    border-radius: 10rem;
-    z-index: -2;
-}
-.button:before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #16AFE3; /* Поменяйте на фактический цвет и тон, если $color не определен */
-    transition: all .3s;
-    border-radius: 10rem;
-    z-index: -1;
-}
 
-.button:hover {
-    color: #fff;
-}
-
-.button:hover:before {
-    width: 100%;
-    }
 
                                   /* use_device */
 .use_device{
