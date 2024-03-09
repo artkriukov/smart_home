@@ -35,7 +35,7 @@ function displayDevices(devices) {
     const button = document.createElement("button");
     button.type = "submit";
     button.classList.add("button");
-    button.textContent = "Купить";
+    button.textContent = "Подробнее";
 
     content.appendChild(title);
     content.appendChild(description);
