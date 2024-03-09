@@ -1,7 +1,4 @@
-const sections = ['header', 'about', 'devices', 'use_device', 'download', 'footer'];
+document.write('<script src="js/addMainLayout.js"><\/script>');
+document.write('<script src="js/addInfoDevices.js"><\/script>');
 
-sections.forEach(section => {
-    fetch(`html/${section}.html`)
-        .then(response => response.text())
-        .then(data => document.getElementById(section).innerHTML = data);
-});
+
