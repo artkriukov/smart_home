@@ -3,8 +3,20 @@
     max-width: 1170px;
     margin: auto;
 }
+.title{
+    font-weight: 600;
+    font-size: 24px;
+}
+.header_title{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+
+}
 .header{
     background-color: #EEEAEA;
+    font-family: "Montserrat", sans-serif;
 }
 .menu__body{
     display: flex;
@@ -39,13 +51,46 @@
 .menu__link:hover:after{
     width: 100%;
 }
+.header_img {
+    position: relative;
+    background-image: url('img/background.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 300px; 
+    color: #ffffff; 
+}
+
+.header_img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), transparent, transparent, rgba(0, 0, 0, 0.7));
+     
+}
+
+.header_descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 2;
+}
+.header_text{
+    color: #fff;
+    text-align: center;
+    max-width: 700px;
+    padding-top: 30px;
+    font-size: 24px;
+}
+
 
 
                                             /* about_company */
-.title{
-    font-weight: 600;
-    font-size: 24px;
-}
+
 .about_company{
     font-family: "Montserrat", sans-serif;
     width: 100%;
