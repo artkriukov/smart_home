@@ -239,14 +239,13 @@
 
 /* download */
 .download{
-    padding-top: 20px;
-padding-bottom: 20px;
-    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-family: "Montserrat", sans-serif;
 }
 .download_item__img{
-    width: 300px;
-    height: 100px;
+    width: 250px;
+    height: 80px;
 }
 
 .download_items{
