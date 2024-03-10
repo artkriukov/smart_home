@@ -30,12 +30,15 @@
 }
 
 #popupImage{
-    width: 170px;
+    width: 350px;
+    border-radius: 10px;
 }
 
 #popupTitle{
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
+    padding-top: 15px;
+    font-weight: 600;
 }
 
 #popupDescription{

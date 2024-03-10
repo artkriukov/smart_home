@@ -51,26 +51,6 @@ function displayDevices(devices) {
     });
 }
 
-function openPopup(title, description, image) {
-    const popupOverlay = document.getElementById("popupOverlay");
-    const popup = document.getElementById("popup");
-    const popupTitle = document.getElementById("popupTitle");
-    const popupDescription = document.getElementById("popupDescription");
-    const popupImage = document.getElementById("popupImage");
-
-    popupTitle.textContent = title;
-    popupDescription.textContent = description;
-    popupImage.src = image;
-
-    popupOverlay.style.display = "flex";
-}
-
-function closePopup() {
-    const popupOverlay = document.getElementById("popupOverlay");
-
-    popupOverlay.style.display = "none";
-}
-
 // Загрузка девайсов и их отображение
 fetchDevices().then((devices) => {
     displayDevices(devices);
