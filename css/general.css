@@ -23,6 +23,7 @@
     position: relative;
     overflow: hidden;
     border: none;
+    cursor: pointer;
 }
 
 .button:after,
