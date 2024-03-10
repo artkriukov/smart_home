@@ -5,6 +5,7 @@ const sections = [
     "use_device",
     "download",
     "footer",
+    "popup",
 ];
 
 sections.forEach((section) => {
