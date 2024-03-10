@@ -1,6 +1,6 @@
 async function fetchDevices() {
     try {
-        const response = await fetch("https://artkriukov.github.io/devices.json"); 
+        const response = await fetch("devices.json"); 
         const data = await response.json();
         return data.devices;
     } catch (error) {
@@ -9,6 +9,7 @@ async function fetchDevices() {
 }
 
 function displayDevices(devices) {
+    console.log(devices);
     const devicesContainer = document.querySelector(".devices__items");
 
     devices.forEach((device) => {
