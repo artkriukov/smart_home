@@ -1,6 +1,6 @@
 async function fetchDevices() {
     try {
-        const response = await fetch("../devices.json"); 
+        const response = await fetch("https://artkriukov.github.io/devices.json"); 
         const data = await response.json();
         return data.devices;
     } catch (error) {
