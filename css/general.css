@@ -1,0 +1,57 @@
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+}
+
+.button {
+    margin-top: 20px;
+    background-color: #00BFFF;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+
+.button:after,
+.button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+}
+
+.button:after {
+    background-color: #00BFFF;
+    z-index: -2;
+}
+
+.button:before {
+    background-color: #16AFE3;
+    transition: width .3s;
+    z-index: -1;
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button:hover:before {
+    width: 100%;
+}
